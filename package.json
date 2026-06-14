@@ -1,0 +1,21 @@
+{
+  "name": "@wappon28dev/karabiner-config",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf ~/.config/karabiner/assets/complex_modifications/*",
+    "typecheck": "tsgo --noEmit",
+    "build": "bun run src/index.ts",
+    "generate": "bun run clean && bun run build"
+  },
+  "dependencies": {
+    "karabiner.ts": "^1.16.0"
+  },
+  "devDependencies": {
+    "@tsconfig/strictest": "^2.0.8",
+    "@types/bun": "^1.3.14",
+    "@types/node": "^20.0.0",
+    "@typescript/native-preview": "^7.0.0-dev.20260614.1",
+    "typescript": "^5.0.0"
+  }
+}
