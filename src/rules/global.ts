@@ -31,10 +31,8 @@ export function globalRules() {
 
     // 7. Single Cmd to Cmd + Space
     rule("Single Cmd to Cmd + Space").manipulators([
-      map("left_command", null, "any")
-        .parameters({ "basic.to_if_held_down_threshold_milliseconds": 100 })
-        .to("left_command", undefined, { lazy: true })
-        .toIfHeldDown("left_command")
+      map("left_command")
+        .to("left_command")
         .toIfAlone([
           toKey("spacebar", "left_command"),
           toKey("japanese_eisuu", undefined, { lazy: true }),

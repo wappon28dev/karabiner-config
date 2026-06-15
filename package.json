@@ -3,10 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "clean": "rm -rf ~/.config/karabiner/assets/complex_modifications/*",
     "typecheck": "tsgo --noEmit",
     "build": "bun run src/index.ts",
-    "generate": "bun run clean && bun run build"
+    "generate": "bun run build"
   },
   "dependencies": {
     "karabiner.ts": "^1.16.0"
