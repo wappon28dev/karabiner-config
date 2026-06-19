@@ -2,3 +2,4 @@
 bun = "1.2"
 node = "lts"
 "npm:@antfu/ni" = "latest"
+
